@@ -9,8 +9,9 @@ const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
 let score = 0;
+let wrongAnswers = [];
 
-// Loading data from external JSON
+// carregando dados JSON de um arquivo externo.
 function loadJSON(callback) {
   const xhr = new XMLHttpRequest();
   xhr.overrideMimeType("application/json");
@@ -57,23 +58,40 @@ loadJSON(function (quizData) {
   }
 
   submitBtn.addEventListener("click", () => {
-    // check to see the answer
+    // Checa se a resposta está correta ou não.
     const answer = getSelected();
 
     if (answer) {
       if (answer === quizData.questions[currentQuiz].correct) {
         score++;
+      } else {
+        wrongAnswers.push(currentQuiz);
       }
 
       currentQuiz++;
       if (currentQuiz < quizData.questions.length) {
         loadQuiz();
       } else {
-        quiz.innerHTML = `
-                <h2>Você respondeu corretamente a ${score}/${quizData.questions.length} perguntas.</h2>
-                
-                <button onclick="location.reload()">Tentar novamente</button>
-            `;
+        let resultHTML = `<h2>Você respondeu corretamente a ${score}/${quizData.questions.length} perguntas.</h2>`;
+
+        if (wrongAnswers.length > 0) {
+          resultHTML += `<h3 class="center">Perguntas que você errou:</h3>`;
+          resultHTML += `<ul class="wrongAnswers">`;
+
+          wrongAnswers.forEach((index) => {
+            const question = quizData.questions[index];
+            resultHTML += `<li>${
+              question.question
+            } - Resposta correta: <span class="correct">${
+              question[question.correct]
+            }</span></li>`;
+          });
+
+          resultHTML += "</ul>";
+        }
+
+        resultHTML += `<button onclick="location.reload()">Tentar novamente</button>`;
+        quiz.innerHTML = resultHTML;
       }
     }
   });

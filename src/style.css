@@ -10,7 +10,6 @@ body{
     background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
     background-repeat: no-repeat;
     min-height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +20,18 @@ body{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     width: 600px;
     max-width: 100%;
-    overflow: hidden;
 }
 .quiz-header{
     padding: 4rem;
+}
+.center{
+    text-align: center;
+}
+.wrongAnswers{
+    padding: 5px 4rem;
+}
+.correct{
+    color: green;
 }
 h2{
     padding: 1rem;
