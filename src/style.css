@@ -28,7 +28,6 @@ body{
 .quiz-header{
     padding: 4rem;
     transition: all .3s linear;
-
 }
 .center{
     text-align: center;
@@ -150,4 +149,18 @@ h2.dark{
     height: 13px;
     border-radius: 50%;
     transition: all .3s linear;
+}
+
+
+/* Mobile */
+@media (max-width: 450px) {
+    .quiz-header{
+        padding: 2rem;
+    }
+    .wrongAnswers{
+        padding: 5px 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
 }
