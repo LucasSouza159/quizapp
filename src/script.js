@@ -93,13 +93,27 @@ loadJSON(function (quizData) {
           resultHTML += "</ul>";
         }
 
-        resultHTML += `<button onclick="location.reload()">Tentar novamente</button>`;
+        resultHTML += `<button class="enviar" onclick="location.reload()">Tentar novamente</button>`;
         quiz.innerHTML = resultHTML;
+
+        if (document.body.classList.contains("dark")) {
+          const h2Element = quiz.querySelector("h2");
+          const h3Element = quiz.querySelector("h3");
+          const liElement = quiz.querySelectorAll("ul li");
+          const buttonElement = quiz.querySelector("button");
+          h2Element.classList.toggle("dark-h2");
+          h3Element.classList.toggle("dark-h3");
+          liElement.forEach((element) => {
+            element.classList.toggle("dark-li");
+          });
+          buttonElement.classList.toggle("dark-final");
+        }
       }
     }
   });
 });
 
+// Função isolada para execução do darkmod
 function darkMode() {
   const toggle = document.getElementById("toggle");
   const textContent = document.querySelectorAll(".text-content");
@@ -108,11 +122,6 @@ function darkMode() {
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     quiz.classList.toggle("dark");
-
-    textContent.forEach((content) => {
-      content.classList.toggle("dark");
-    });
-
     questionNumber.classList.toggle("dark");
     submitBtn.classList.toggle("dark");
     questionEl.classList.toggle("dark");
@@ -120,6 +129,10 @@ function darkMode() {
 
     answerEls.forEach((answer) => {
       answer.classList.toggle("dark");
+    });
+
+    textContent.forEach((content) => {
+      content.classList.toggle("dark");
     });
   });
 }
