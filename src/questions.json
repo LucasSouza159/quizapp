@@ -1,286 +1,348 @@
 {
   "questions":[
-  {
-    "question": "O que é Flexbox CSS?",
-    "a": "Um modelo de layout bidimensional",
-    "b": "Um framework de JavaScript",
-    "c": "Uma linguagem de marcação",
-    "d": "Um protocolo de rede",
-    "correct": "a"
-  },
-  {
-    "question": "Qual é a finalidade principal do Flexbox CSS?",
-    "a": "Criar efeitos de animação",
-    "b": "Criar layouts responsivos",
-    "c": "Estilizar fontes e cores",
-    "d": "Realizar chamadas assíncronas",
-    "correct": "b"
-  },
-  {
-    "question": "Como se define um container como um flex container?",
-    "a": "Usando a propriedade 'display' com o valor 'flex'",
-    "b": "Usando a propriedade 'flexbox' com o valor 'true'",
-    "c": "Usando a classe '.flex-container' no elemento",
-    "d": "Usando a propriedade 'flex-direction' com o valor 'row'",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir a direção do fluxo principal dos itens em um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "justify-content",
-    "correct": "c"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-direction'?",
-    "a": "row",
-    "b": "column",
-    "c": "row-reverse",
-    "d": "column-reverse",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir a ordem dos itens em um flex container?",
-    "a": "order",
-    "b": "flex-grow",
-    "c": "flex-shrink",
-    "d": "flex-basis",
-    "correct": "a"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'order'?",
-    "a": "0",
-    "b": "1",
-    "c": "5",
-    "d": "10",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o tamanho flexível de um item em um flex container?",
-    "a": "flex-grow",
-    "b": "flex-shrink",
-    "c": "flex-basis",
-    "d": "flex-flow",
-    "correct": "a"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-grow'?",
-    "a": "0",
-    "b": "1",
-    "c": "5",
-    "d": "10",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir a capacidade de encolhimento de um item em um flex container?",
-    "a": "flex-grow",
-    "b": "flex-shrink",
-    "c": "flex-basis",
-    "d": "flex-flow",
-    "correct": "b"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-shrink'?",
-    "a": "0",
-    "b": "1",
-    "c": "5",
-    "d": "10",
-    "correct": "b"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-basis'?",
-    "a": "0",
-    "b": "auto",
-    "c": "none",
-    "d": "100%",
-    "correct": "b"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para alinhar os itens verticalmente dentro de um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "justify-content",
-    "correct": "a"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'align-items'?",
-    "a": "flex-start",
-    "b": "flex-end",
-    "c": "center",
-    "d": "stretch",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para alinhar os itens horizontalmente dentro de um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "justify-content",
-    "correct": "d"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'justify-content'?",
-    "a": "flex-start",
-    "b": "flex-end",
-    "c": "center",
-    "d": "space-between",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para quebrar os itens em várias linhas dentro de um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "justify-content",
-    "correct": "b"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-wrap'?",
-    "a": "nowrap",
-    "b": "wrap",
-    "c": "wrap-reverse",
-    "d": "inherit",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para alinhar os itens quando há espaço extra em um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "justify-content",
-    "correct": "d"
-  },
-  {
-    "question":
-      "Qual é o valor padrão da propriedade 'justify-content' quando há espaço extra em um flex container?",
-    "a": "flex-start",
-    "b": "flex-end",
-    "c": "center",
-    "d": "space-between",
-    "correct": "d"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para alinhar um item especificamente dentro de um flex container?",
-    "a": "align-self",
-    "b": "flex-item",
-    "c": "item-align",
-    "d": "flex-align",
-    "correct": "a"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'align-self'?",
-    "a": "auto",
-    "b": "flex-start",
-    "c": "flex-end",
-    "d": "center",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o alinhamento dos itens em relação ao eixo cruzado em um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "align-content",
-    "correct": "d"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'align-content'?",
-    "a": "flex-start",
-    "b": "flex-end",
-    "c": "center",
-    "d": "stretch",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o espaçamento entre os itens em um flex container?",
-    "a": "padding",
-    "b": "margin",
-    "c": "spacing",
-    "d": "gap",
-    "correct": "d"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'gap'?",
-    "a": "0",
-    "b": "1rem",
-    "c": "0.5rem",
-    "d": "2rem",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir a ordem dos itens em um flex container com base em um valor numérico?",
-    "a": "order",
-    "b": "flex-order",
-    "c": "item-order",
-    "d": "flex-item-order",
-    "correct": "a"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir se os itens em um flex container podem ser recolhidos para uma linha única?",
-    "a": "flex-wrap",
-    "b": "flex-flow",
-    "c": "flex-shrink",
-    "d": "flex-collapse",
-    "correct": "c"
-  },
-  {
-    "question": "Qual é o valor padrão da propriedade 'flex-shrink'?",
-    "a": "0",
-    "b": "1",
-    "c": "5",
-    "d": "10",
-    "correct": "b"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o tamanho flexível de um item em um flex container, em termos de proporção?",
-    "a": "flex-grow",
-    "b": "flex-shrink",
-    "c": "flex-basis",
-    "d": "flex",
-    "correct": "d"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para alinhar os itens em uma linha específica dentro de um flex container?",
-    "a": "align-items",
-    "b": "flex-wrap",
-    "c": "flex-direction",
-    "d": "align-content",
-    "correct": "d"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o tamanho mínimo flexível de um item em um flex container?",
-    "a": "flex-grow",
-    "b": "flex-shrink",
-    "c": "flex-basis",
-    "d": "flex-min",
-    "correct": "c"
-  },
-  {
-    "question":
-      "Qual é a propriedade usada para definir o tamanho máximo flexível de um item em um flex container?",
-    "a": "flex-grow",
-    "b": "flex-shrink",
-    "c": "flex-basis",
-    "d": "flex-max",
-    "correct": "c"
-  }
+    {
+      "question": "Qual propriedade do Flexbox define o eixo principal?",
+      "a": "align-items",
+      "b": "justify-content",
+      "c": "flex-direction",
+      "d": "flex-wrap",
+      "correct": "c"
+      },
+      {
+      "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem na vertical?",
+      "a": "row",
+      "b": "row-reverse",
+      "c": "column",
+      "d": "column-reverse",
+      "correct": "c"
+      },
+      {
+      "question": "Qual propriedade do Flexbox permite que um item cresça além do tamanho definido?",
+      "a": "flex-grow",
+      "b": "flex-shrink",
+      "c": "flex-basis",
+      "d": "flex",
+      "correct": "a"
+      },
+      {
+      "question": "Qual propriedade do Flexbox controla a quantidade de espaço disponível que um item ocupa?",
+      "a": "flex-grow",
+      "b": "flex-shrink",
+      "c": "flex-basis",
+      "d": "flex",
+      "correct": "d"
+      },
+      {
+      "question": "Qual propriedade do Flexbox alinha os itens horizontalmente quando há espaço sobrando?",
+      "a": "align-items",
+      "b": "justify-content",
+      "c": "align-content",
+      "d": "align-self",
+      "correct": "b"
+      },
+      {
+      "question": "Qual propriedade do Flexbox permite que um item encolha além do tamanho definido?",
+      "a": "flex-grow",
+      "b": "flex-shrink",
+      "c": "flex-basis",
+      "d": "flex",
+      "correct": "b"
+      },
+      {
+      "question": "Qual propriedade do Flexbox permite que um item seja alinhado individualmente em relação aos outros itens?",
+      "a": "align-items",
+      "b": "justify-content",
+      "c": "align-content",
+      "d": "align-self",
+      "correct": "d"
+      },
+      {
+      "question": "Qual valor da propriedade 'flex-wrap' faz com que os itens sejam distribuídos em várias linhas?",
+      "a": "nowrap",
+      "b": "wrap",
+      "c": "wrap-reverse",
+      "d": "flex-wrap",
+      "correct": "b"
+      },
+      {
+      "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo vertical?",
+      "a": "align-items",
+      "b": "justify-content",
+      "c": "flex-direction",
+      "d": "align-content",
+      "correct": "a"
+      },
+      {
+      "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem da direita para a esquerda?",
+      "a": "row",
+      "b": "row-reverse",
+      "c": "column",
+      "d": "column-reverse",
+      "correct": "b"
+      },
+      {
+      "question": "Qual propriedade do Flexbox define o tamanho inicial de um item flexível?",
+      "a": "flex-grow",
+      "b": "flex-shrink",
+      "c": "flex-basis",
+      "d": "flex",
+      "correct": "c"
+      },
+      {
+        "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível no eixo vertical?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "flex-direction",
+        "d": "align-content",
+        "correct": "a"
+        },
+        {
+        "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem da esquerda para a direita?",
+        "a": "row",
+        "b": "row-reverse",
+        "c": "column",
+        "d": "column-reverse",
+        "correct": "a"
+        },
+        {
+        "question": "Qual propriedade do Flexbox define o espaçamento entre os itens?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "align-content",
+        "d": "gap",
+        "correct": "d"
+        },
+        {
+        "question": "Qual propriedade do Flexbox permite que um item seja alinhado individualmente no eixo horizontal?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "align-content",
+        "d": "align-self",
+        "correct": "d"
+        },
+        {
+        "question": "Qual valor da propriedade 'flex-wrap' faz com que os itens sejam distribuídos em várias linhas, mas na ordem inversa?",
+        "a": "nowrap",
+        "b": "wrap",
+        "c": "wrap-reverse",
+        "d": "flex-wrap",
+        "correct": "c"
+        },
+        {
+        "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo horizontal?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "flex-direction",
+        "d": "align-content",
+        "correct": "b"
+        },
+        {
+        "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem de baixo para cima?",
+        "a": "row",
+        "b": "row-reverse",
+        "c": "column",
+        "d": "column-reverse",
+        "correct": "d"
+        },
+        {
+        "question": "Qual propriedade do Flexbox define o tamanho máximo de um item flexível?",
+        "a": "flex-grow",
+        "b": "flex-shrink",
+        "c": "flex-basis",
+        "d": "flex",
+        "correct": "c"
+        },
+        {
+        "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível no eixo horizontal?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "flex-direction",
+        "d": "align-self",
+        "correct": "b"
+        },
+        {
+        "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem da direita para a esquerda?",
+        "a": "row",
+        "b": "row-reverse",
+        "c": "column",
+        "d": "column-reverse",
+        "correct": "b"
+        },
+        {
+        "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo vertical?",
+        "a": "align-items",
+        "b": "justify-content",
+        "c": "flex-direction",
+        "d": "align-content",
+        "correct": "a"
+        },
+        {
+          "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem na vertical, de baixo para cima?",
+          "a": "row",
+          "b": "row-reverse",
+          "c": "column",
+          "d": "column-reverse",
+          "correct": "d"
+          },
+          {
+          "question": "Qual propriedade do Flexbox define o espaçamento entre os itens ao longo do eixo principal?",
+          "a": "align-items",
+          "b": "justify-content",
+          "c": "align-content",
+          "d": "gap",
+          "correct": "b"
+          },
+          {
+          "question": "Qual propriedade do Flexbox define o tamanho máximo de um item flexível antes que ele comece a encolher?",
+          "a": "flex-grow",
+          "b": "flex-shrink",
+          "c": "flex-basis",
+          "d": "flex",
+          "correct": "b"
+          },
+          {
+          "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível individualmente no eixo vertical?",
+          "a": "align-items",
+          "b": "justify-content",
+          "c": "align-content",
+          "d": "align-self",
+          "correct": "d"
+          },
+          {
+          "question": "Qual valor da propriedade 'flex-wrap' faz com que os itens sejam distribuídos em várias linhas, mas na ordem original?",
+          "a": "nowrap",
+          "b": "wrap",
+          "c": "wrap-reverse",
+          "d": "flex-wrap",
+          "correct": "a"
+          },
+          {
+          "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo horizontal quando há espaço sobrando?",
+          "a": "align-items",
+          "b": "justify-content",
+          "c": "align-content",
+          "d": "align-self",
+          "correct": "b"
+          },
+          {
+          "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem de cima para baixo?",
+          "a": "row",
+          "b": "row-reverse",
+          "c": "column",
+          "d": "column-reverse",
+          "correct": "c"
+          },
+          {
+          "question": "Qual propriedade do Flexbox define o tamanho mínimo de um item flexível?",
+          "a": "flex-grow",
+          "b": "flex-shrink",
+          "c": "flex-basis",
+          "d": "flex",
+          "correct": "c"
+          },
+          {
+          "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível individualmente no eixo horizontal?",
+          "a": "align-items",
+          "b": "justify-content",
+          "c": "align-content",
+          "d": "align-self",
+          "correct": "d"
+          },
+          {
+          "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem da esquerda para a direita?",
+          "a": "row",
+          "b": "row-reverse",
+          "c": "column",
+          "d": "column-reverse",
+          "correct": "a"
+          },
+          {
+            "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo vertical?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "flex-direction",
+            "d": "align-content",
+            "correct": "a"
+            },
+            {
+            "question": "Qual propriedade do Flexbox define o espaçamento entre os itens ao longo do eixo transversal?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "align-content",
+            "d": "gap",
+            "correct": "c"
+            },
+            {
+            "question": "Qual propriedade do Flexbox define o tamanho máximo de um item flexível antes que ele comece a encolher?",
+            "a": "flex-grow",
+            "b": "flex-shrink",
+            "c": "flex-basis",
+            "d": "flex",
+            "correct": "c"
+            },
+            {
+            "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível individualmente no eixo horizontal?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "align-content",
+            "d": "align-self",
+            "correct": "d"
+            },
+            {
+            "question": "Qual valor da propriedade 'flex-wrap' faz com que os itens sejam distribuídos em várias linhas, mas na ordem original?",
+            "a": "nowrap",
+            "b": "wrap",
+            "c": "wrap-reverse",
+            "d": "flex-wrap",
+            "correct": "a"
+            },
+            {
+            "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo horizontal quando há espaço sobrando?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "align-content",
+            "d": "align-self",
+            "correct": "b"
+            },
+            {
+            "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem de cima para baixo?",
+            "a": "row",
+            "b": "row-reverse",
+            "c": "column",
+            "d": "column-reverse",
+            "correct": "c"
+            },
+            {
+            "question": "Qual propriedade do Flexbox define o tamanho mínimo de um item flexível?",
+            "a": "flex-grow",
+            "b": "flex-shrink",
+            "c": "flex-basis",
+            "d": "flex",
+            "correct": "c"
+            },
+            {
+            "question": "Qual propriedade do Flexbox é usada para alinhar um item flexível individualmente no eixo horizontal?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "align-content",
+            "d": "align-self",
+            "correct": "d"
+            },
+            {
+            "question": "Qual valor da propriedade 'flex-direction' faz os itens se posicionarem da esquerda para a direita?",
+            "a": "row",
+            "b": "row-reverse",
+            "c": "column",
+            "d": "column-reverse",
+            "correct": "a"
+            },
+            {
+            "question": "Qual propriedade do Flexbox define o alinhamento dos itens no eixo vertical?",
+            "a": "align-items",
+            "b": "justify-content",
+            "c": "flex-direction",
+            "d": "align-content",
+            "correct": "a"
+            }
   ]
 }

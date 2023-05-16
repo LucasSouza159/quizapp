@@ -26,6 +26,8 @@ O aplicativo de quiz possui as seguintes funcionalidades:
 - Navegação para a próxima pergunta após selecionar uma resposta.
 - Exibição do resultado final do quiz, incluindo a pontuação alcançada e as perguntas respondidas incorretamente.
 - Opção de reiniciar o quiz.
+- Numeração da pergunta e o total.
+- Darkmode clean.
 
 ## Personalização
 
@@ -33,7 +35,8 @@ Caso deseje personalizar o aplicativo, você pode modificar os estilos no arquiv
 
 ## Dependências
 
-O aplicativo não possui dependências externas. Todos os recursos necessários estão incluídos nos arquivos fornecidos.
+Font Awesome | CDN link -> https://cdnjs.com/libraries/font-awesome
+Font Awesome | Página Oficial -> https://fontawesome.com/
 
 ---
 

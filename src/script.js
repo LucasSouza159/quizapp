@@ -6,6 +6,7 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+const questionNumber = document.getElementById("questionNumber");
 
 let currentQuiz = 0;
 let score = 0;
@@ -33,6 +34,8 @@ loadJSON(function (quizData) {
     const currentQuizData = quizData.questions[currentQuiz];
 
     questionEl.innerText = currentQuizData.question;
+    questionNumber.innerText =
+      currentQuiz + 1 + "/" + quizData.questions.length;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
@@ -96,3 +99,28 @@ loadJSON(function (quizData) {
     }
   });
 });
+
+function darkMode() {
+  const toggle = document.getElementById("toggle");
+  const textContent = document.querySelectorAll(".text-content");
+  const darkIcon = document.querySelector(".iIcon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    quiz.classList.toggle("dark");
+
+    textContent.forEach((content) => {
+      content.classList.toggle("dark");
+    });
+
+    questionNumber.classList.toggle("dark");
+    submitBtn.classList.toggle("dark");
+    questionEl.classList.toggle("dark");
+    darkIcon.classList.toggle("dark");
+
+    answerEls.forEach((answer) => {
+      answer.classList.toggle("dark");
+    });
+  });
+}
+darkMode();
